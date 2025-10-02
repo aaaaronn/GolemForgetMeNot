@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "golemforgetmenot",
+	"version": "${version}",
+	"name": "GolemForgetMeNot",
+	"description": "Increases the amount of chests the copper golem remembers when searching",
+	"authors": [
+		"Aarocket"
+	],
+	"contact": {
+		"homepage": "https://github.com/aaaaronn",
+		"sources": "https://github.com/aaaaronn"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/golemforgetmenot/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.aarocket.golemforgetmenot.GolemForgetMeNot"
+		]
+	},
+	"mixins": [
+		"golemforgetmenot.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.9",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

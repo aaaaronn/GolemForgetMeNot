@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "com.aarocket.golemforgetmenot.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"GolemMoveItemsMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
