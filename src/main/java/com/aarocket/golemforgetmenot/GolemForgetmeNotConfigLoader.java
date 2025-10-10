@@ -24,9 +24,12 @@ public class GolemForgetmeNotConfigLoader {
             if (json.has("visitsUntilCooldown")) {
                 GolemForgetMeNotConfig.setVisitsUntilCooldown(json.get("visitsUntilCooldown").getAsInt());
             }
+            if (json.has("completeStacks")) {
+                GolemForgetMeNotConfig.setCompleteStacks(json.get("completeStacks").getAsBoolean());
+            }
             GolemForgetMeNot.LOGGER.info("Golem memory loaded!");
         } catch (IOException e) {
-            GolemForgetMeNot.LOGGER.error("Failed to load golem_forget_me_not.json... using default (24)", e);
+            GolemForgetMeNot.LOGGER.error("Failed to load golem_forget_me_not.json... using defaults (24, true)", e);
         }
     }
 
@@ -36,6 +39,7 @@ public class GolemForgetmeNotConfigLoader {
             CONFIG_FILE.getParentFile().mkdirs();
             JsonObject json = new JsonObject();
             json.addProperty("visitsUntilCooldown", GolemForgetMeNotConfig.getVisitsUntilCooldown());
+            json.addProperty("completeStacks", GolemForgetMeNotConfig.getCompleteStacks());
 
             try (FileWriter writer = new FileWriter(CONFIG_FILE)) {
                 GSON.toJson(json, writer);
