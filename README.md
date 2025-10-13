@@ -1,9 +1,16 @@
-# GolemForgetMeNot
+# Golem Forget Me Not
 
 - [Modrinth link](https://modrinth.com/mod/golem-forget-me-not)<br>
 
-Lets Copper Golems inspect more chests before cooldown (where they forget all previous chests) when attempting to sort an item, ending possible infinite searching loops.<br>
+---
 
-By default increased from 10 to 24 chests<Br>
+# Features
+
+A simple mod that adds a few QOL features to the copper golem
+
+- Lets Copper Golems inspect more chests before cooldown (where they forget all previous chests) when attempting to sort an item, ending possible infinite searching loops.
+  - By default increased from 10 to 24 chests
+- Lets copper golems reach higher chests
+  - By default increased from 2 to 3
 
 Customizable using the golem_forget_me_not.json in config

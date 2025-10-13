@@ -24,13 +24,13 @@ public class GolemForgetmeNotConfigLoader {
             if (json.has("visitsUntilCooldown")) {
                 GolemForgetMeNotConfig.setVisitsUntilCooldown(json.get("visitsUntilCooldown").getAsInt());
             } else markRegenerate = true;
-            if (json.has("heightReachIncrease")) {
-                GolemForgetMeNotConfig.setHeightReachIncrease(json.get("heightReachIncrease").getAsInt());
+            if (json.has("heightReach")) {
+                GolemForgetMeNotConfig.setHeightReach(json.get("heightReach").getAsInt());
             } else markRegenerate = true;
 
             GolemForgetMeNot.LOGGER.info("Golem memory loaded!");
         } catch (IOException e) {
-            GolemForgetMeNot.LOGGER.error("Failed to load golem_forget_me_not.json... using default (24)", e);
+            GolemForgetMeNot.LOGGER.error("Failed to load golem_forget_me_not.json... using defaults", e);
         }
         // if updating from previous version, update old JSON
         if(markRegenerate) saveConfig();
@@ -42,7 +42,7 @@ public class GolemForgetmeNotConfigLoader {
             CONFIG_FILE.getParentFile().mkdirs();
             JsonObject json = new JsonObject();
             json.addProperty("visitsUntilCooldown", GolemForgetMeNotConfig.getVisitsUntilCooldown());
-            json.addProperty("heightReachIncrease", GolemForgetMeNotConfig.getHeightReachIncrease());
+            json.addProperty("heightReach", GolemForgetMeNotConfig.getHeightReach());
 
             try (FileWriter writer = new FileWriter(CONFIG_FILE)) {
                 GSON.toJson(json, writer);

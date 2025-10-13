@@ -2,7 +2,7 @@ package com.aarocket.golemforgetmenot;
 
 public class GolemForgetMeNotConfig {
     private static int visitsUntilCooldown = 24;
-    private static int heightReachIncrease = 1;
+    private static int heightReach = 3;
 
     public static int getVisitsUntilCooldown() {
         return visitsUntilCooldown;
@@ -12,13 +12,13 @@ public class GolemForgetMeNotConfig {
         visitsUntilCooldown = value;
     }
 
-    public static int getHeightReachIncrease() {
-        return heightReachIncrease;
+    public static int getHeightReach() {
+        return heightReach;
     }
 
-    public static void setHeightReachIncrease(int value) {
-        if (value < 0) value = 0;
-        if (value > 2) GolemForgetMeNot.LOGGER.warn("A copper golem reach height greater than 4 is likely to break!");
-        heightReachIncrease = value;
+    public static void setHeightReach(int value) {
+        if (value < 2) value = 2;
+        if (value > 4) GolemForgetMeNot.LOGGER.warn("A copper golem reach height greater than 4 is likely to break!");
+        heightReach = value;
     }
 }

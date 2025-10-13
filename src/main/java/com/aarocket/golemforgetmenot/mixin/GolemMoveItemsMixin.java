@@ -29,7 +29,7 @@ public class GolemMoveItemsMixin {
 	)
 	private double modifyWithinRange(double original)
 	{
-		return 0.5  + GolemForgetMeNotConfig.getHeightReachIncrease();
+		return 0.5  + (GolemForgetMeNotConfig.getHeightReach() - 2);
 	}
 
 
@@ -43,6 +43,6 @@ public class GolemMoveItemsMixin {
 	private Vec3d modifyVecPos(Vec3d original)
 	{
 		// adjust to middle of chests
-		return original.add(0,GolemForgetMeNotConfig.getHeightReachIncrease() + 2 / 2.0f,0);
+		return original.add(0,GolemForgetMeNotConfig.getHeightReach() / 2.0f,0);
 	}
 }
