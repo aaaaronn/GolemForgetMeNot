@@ -43,6 +43,7 @@ public class GolemMoveItemsMixin {
 	private Vec3d modifyVecPos(Vec3d original)
 	{
 		// adjust to middle of chests
-		return original.add(0,GolemForgetMeNotConfig.getHeightReach() / 2.0f,0);
+		// any value 2 or greater doesnt detect bottom blocks
+		return original.add(0,1.5,0);
 	}
 }

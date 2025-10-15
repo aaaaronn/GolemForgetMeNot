@@ -18,7 +18,10 @@ public class GolemForgetMeNotConfig {
 
     public static void setHeightReach(int value) {
         if (value < 2) value = 2;
-        if (value > 4) GolemForgetMeNot.LOGGER.warn("A copper golem reach height greater than 4 is likely to break!");
+        if (value > 4) {
+            value = 4;
+            GolemForgetMeNot.LOGGER.error("A copper golem reach height greater than 4 is likely to break! clamped to 4, create a github issue if you want more");
+        }
         heightReach = value;
     }
 }
