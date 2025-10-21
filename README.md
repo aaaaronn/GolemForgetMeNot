@@ -11,5 +11,7 @@ A simple mod that adds a few QOL features to the copper golem
   - By default increased from 10 to 24 chests
 - Lets copper golems reach higher chests
   - By default increased from 2 to 3
+- Lets Copper Golems insert items preferably by completing existing stacks before inserting them into empty slots.
+  - By default true
 
 Customizable using the golem_forget_me_not.json in config
