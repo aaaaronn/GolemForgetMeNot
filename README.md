@@ -1,3 +1,5 @@
+![Mod icon, a copper golem with a ram stick](src/main/resources/assets/golemforgetmenot/icon.png)
+
 # Golem Forget Me Not
 
 A simple mod that adds a few QOL features to the copper golem
