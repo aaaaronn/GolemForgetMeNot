@@ -1,0 +1,13 @@
+{
+	"golemforgetmenot.config.title": "Golem Forget Me Not",
+	"golemforgetmenot.config.category.general": "General",
+
+	"golemforgetmenot.config.visitsUntilCooldown": "Chests remembered",
+	"golemforgetmenot.config.visitsUntilCooldown.tooltip": "How many chests a copper golem inspects before it forgets them all and starts its cooldown. Vanilla: 10.",
+
+	"golemforgetmenot.config.completeStacks": "Complete stacks",
+	"golemforgetmenot.config.completeStacks.tooltip": "Golems fill existing partial stacks before using empty slots.",
+
+	"golemforgetmenot.config.heightReach": "Vertical reach (blocks)",
+	"golemforgetmenot.config.heightReach.tooltip": "How high a copper golem can reach chests. Vanilla: 2. Values above 4 are likely to break."
+}

@@ -15,6 +15,9 @@
 	"icon": "assets/golemforgetmenot/icon.png",
 	"environment": "*",
 	"entrypoints": {
+		"modmenu": [
+			"com.aarocket.golemforgetmenot.ModMenuIntegration"
+		],
 		"main": [
 			"com.aarocket.golemforgetmenot.GolemForgetMeNot"
 		]
@@ -22,6 +25,10 @@
 	"mixins": [
 		"golemforgetmenot.mixins.json"
 	],
+	"suggests": {
+		"modmenu": "*",
+		"cloth-config": "*"
+	},
 	"depends": {
 		"fabricloader": ">=0.18.5",
 		"minecraft": ">=26.1",
