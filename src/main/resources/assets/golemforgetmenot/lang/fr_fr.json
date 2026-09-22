@@ -1,0 +1,13 @@
+{
+	"golemforgetmenot.config.title": "Golem Forget Me Not",
+	"golemforgetmenot.config.category.general": "Général",
+
+	"golemforgetmenot.config.visitsUntilCooldown": "Coffres mémorisés",
+	"golemforgetmenot.config.visitsUntilCooldown.tooltip": "Nombre de coffres qu'un golem de cuivre inspecte avant de tous les oublier et de commencer sa pause. Vanilla : 10.",
+
+	"golemforgetmenot.config.completeStacks": "Compléter les piles",
+	"golemforgetmenot.config.completeStacks.tooltip": "Les golems complètent les piles partielles existantes avant d'utiliser les emplacements vides.",
+
+	"golemforgetmenot.config.heightReach": "Portée verticale (blocs)",
+	"golemforgetmenot.config.heightReach.tooltip": "Hauteur maximale à laquelle un golem de cuivre peut atteindre les coffres. Vanilla : 2. Au-delà de 4, des problèmes sont probables."
+}

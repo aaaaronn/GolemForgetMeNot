@@ -38,7 +38,7 @@ public class GolemForgetmeNotConfigLoader {
         if(markRegenerate) saveConfig();
     }
 
-    private static void saveConfig() {
+    public static void saveConfig() {
         try {
             // ensure config folder exists
             CONFIG_FILE.getParentFile().mkdirs();
