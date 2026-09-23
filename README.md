@@ -15,5 +15,6 @@ A simple mod that adds a few QOL features to the copper golem
   - By default increased from 2 to 3
 - Lets Copper Golems insert items preferably by completing existing stacks before inserting them into empty slots.
   - By default true
+- Cloth config API support - edit config without restarting game
 
-Customizable using the golem_forget_me_not.json in config
+Customizable using the golem_forget_me_not.json in config or directly in game with cloth config API (optional)
